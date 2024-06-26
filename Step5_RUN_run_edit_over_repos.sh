@@ -2,7 +2,7 @@
 
 # Define the directory containing the repositories
 REPOS_DIR="./repos"
-EDIT_ME_from_repo="../../Step4_EDIT_EDIT-ME.sh"
+EDIT_ME_from_repo="../../Step4_EDIT_FileChanges.sh"
 
 # Width of the line
 LINE_WIDTH=80
@@ -25,14 +25,14 @@ print_separator() {
 # Iterate over each subdirectory in the REPOS_DIR
 for repo in "$REPOS_DIR"/*; do
   if [ -d "$repo" ]; then
-    print_separator "Running Step4_EDIT_EDIT-ME.sh in $repo"
+    print_separator "Running Step4_EDIT_FileChanges.sh in $repo"
     # Change to the repository directory
     cd "$repo" || continue
-    # Run the Step4_EDIT_EDIT-ME.sh script
+    # Run the Step4_EDIT_FileChanges.sh script
     if [ -f $EDIT_ME_from_repo ]; then
       bash $EDIT_ME_from_repo
     else
-      echo "Step4_EDIT_EDIT-ME.sh not found in $repo"
+      echo "Step4_EDIT_FileChanges.sh not found in $repo"
     fi
     # Change back to the original directory
     cd - > /dev/null

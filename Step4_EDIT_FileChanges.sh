@@ -14,8 +14,8 @@ process_files() {
     echo "Processing $file"
     #🔽🔽🔽🔽 Here is place to add your processing logic
 
-
-    sed -i 's/\[Overview\](#overview)/\[Bazinga\](#Bazinga)/g' $file
+    echo "Path: $file"
+    tail -n 1 $file
 
 
 
