@@ -1,0 +1,4 @@
+ssh://git@100.111.10.89:222/Test/Test2.git branchFromWhichFeatureBranchWillBeCreated
+ssh://git@100.111.10.89:222/Test/Test3.git main
+ssh://git@100.111.10.89:222/Test/Test4.git main
+ssh://git@100.111.10.89:222/Test/Test5.git main
