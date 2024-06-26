@@ -83,7 +83,7 @@ Then you can insert your script to change single files into this area:
 ### Step5_RUN_FileChanges.sh
 Run it with
 ```bash
-bash Step5_RUN_FileChanges.sh
+bash Step5_RUN_run_edit_over_repos.sh
 ```
 
 This will execute the script you defined in Step4_EDIT_FileChanges.sh on all files with the defined file extension in all repos.
